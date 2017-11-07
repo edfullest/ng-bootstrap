@@ -67,6 +67,14 @@ export interface NgbDatepickerNavigateEvent {
     :host {
       border: 1px solid rgba(0, 0, 0, 0.125);
     }
+    :host:active, 
+    :host:focus,
+    :host.active, 
+    :host:not([disabled]):not(disabled).active,
+    :host:not([disabled]):not(disabled):active,
+    :host:active:focus  { 
+      outline: none !important;
+    }
     .ngb-dp-header {
       border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     }
